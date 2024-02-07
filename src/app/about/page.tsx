@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div className="max-w-6xl mx-auto p-3 space-y-4">
-      <h1 className="text-2xl font-medium text-amber-600">About IMBd Clone</h1>
+      <h1 className="text-2xl font-medium text-amber-600">About</h1>
       <h2 className="font-bold">Our Mission</h2>
       <p className="ml-4">
         At IMBs Clone, we’re passionate about cinema. Our mission is to provide
