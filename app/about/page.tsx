@@ -6,7 +6,7 @@ export default function About() {
       <h1 className="text-2xl font-medium text-amber-600">About</h1>
       <h2 className="font-bold">Our Mission</h2>
       <p className="ml-4">
-        At IMBs Clone, we’re passionate about cinema. Our mission is to provide
+        At IMDb Clone, we’re passionate about cinema. Our mission is to provide
         a seamless and enjoyable experience for movie lovers, whether you’re
         looking for information about your favorite films, discovering new
         releases, or exploring classic gems.
