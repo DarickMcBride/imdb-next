@@ -2,14 +2,11 @@ import Link from "next/link";
 import { Result } from "./Results";
 import Image from "next/image";
 import { FiThumbsUp } from "react-icons/fi";
+import { formatDate } from "../lib/shared";
 
 export default function Card({ result }: { result: Result }) {
-  const releaseDate = result.release_date
-    ? new Date(result.release_date).toLocaleDateString()
-    : null;
-  const firstAirDate = result.first_air_date
-    ? new Date(result.first_air_date).toLocaleDateString()
-    : null;
+  const releaseDate = formatDate(result.release_date);
+  const firstAirDate = formatDate(result.first_air_date);
 
   return (
     <div className="group cursor-pointer sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200">
