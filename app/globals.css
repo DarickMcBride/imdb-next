@@ -2,19 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-.lds-dual-ring {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-}
-.lds-dual-ring:after {
-  content: " ";
-  display: block;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #fff;
   border-radius: 50%;
-  border: 6px solid #ffaa00;
-  border-color: #ffaa00 transparent #ffaa00 transparent;
-  animation: lds-dual-ring 1.2s linear infinite;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: #ffb300 transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
