@@ -15,7 +15,7 @@ export default function NavBarItem({
 
   return (
     <div>
-      <Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <Link
           className={`hover:text-amber-600 font-semibold ${
             genre === param
