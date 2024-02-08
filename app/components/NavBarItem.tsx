@@ -15,18 +15,16 @@ export default function NavBarItem({
 
   return (
     <div>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Link
-          className={`hover:text-amber-600 font-semibold ${
-            genre === param
-              ? "underline underline-offset-8 decoration-4 decoration-amber-500 rounded-lg"
-              : ""
-          }`}
-          href={`/?genre=${param}`}
-        >
-          {title}
-        </Link>
-      </Suspense>
+      <Link
+        className={`hover:text-amber-600 font-semibold ${
+          genre === param
+            ? "underline underline-offset-8 decoration-4 decoration-amber-500 rounded-lg"
+            : ""
+        }`}
+        href={`/?genre=${param}`}
+      >
+        {title}
+      </Link>
     </div>
   );
 }
