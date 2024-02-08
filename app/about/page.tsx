@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import cowPic from "../../public/cow.png";
 
 export default function About() {
   return (
@@ -6,8 +8,8 @@ export default function About() {
       <h1 className="text-2xl font-medium text-amber-600">About</h1>
       <h2 className="font-bold">Our Mission</h2>
       <p className="ml-4">
-        At IMDb Clone, we’re passionate about cinema. Our mission is to provide
-        a seamless and enjoyable experience for movie lovers, whether you’re
+        At Moovies, we’re passionate about cinema. Our mission is to provide a
+        seamless and enjoyable experience for movie lovers, whether you’re
         looking for information about your favorite films, discovering new
         releases, or exploring classic gems.
       </p>
@@ -18,8 +20,7 @@ export default function About() {
           movie information from <strong>The Movie Database (TMDB)</strong>.
           TMDB is a trusted and authoritative platform, ensuring that you get
           the most reliable content. Whether it’s release dates, cast lists, or
-          plot summaries, you can count on IMBd Clone to provide accurate
-          details.
+          plot summaries, you can count on Moovies to provide accurate details.
         </li>
         <li>
           <b>Comprehensive movie database: </b>Our extensive movie database
@@ -27,9 +28,9 @@ export default function About() {
           blockbusters to indie darlings, we’ve got it all.
         </li>
         <li>
-          <b>User-friendly interface: </b>We’ve designed IMBd Clone with
-          simplicity in mind. Navigate through movie details, cast and crew
-          information, and user reviews effortlessly.
+          <b>User-friendly interface: </b>We’ve designed Moovies with simplicity
+          in mind. Navigate through movie details, cast and crew information,
+          and user reviews effortlessly.
         </li>
         <li>
           <b>Powered by TMDB: </b>We leverage the power of The Movie Database
@@ -38,6 +39,14 @@ export default function About() {
           content.
         </li>
       </ul>
+      <Image
+        className="mx-auto  rounded-lg shadow-lg"
+        src={cowPic}
+        alt="cow"
+        width={0}
+        height={0}
+        style={{ width: "90%", maxHeight: 500 }}
+      ></Image>
     </div>
   );
 }
