@@ -1,4 +1,5 @@
-import Movies from "./components/Movies";
+import Results from "./components/Results";
+import Movies from "./components/Results";
 
 const API_KEY = process.env.API_KEY;
 
@@ -33,7 +34,7 @@ export default async function Home({
 
   return (
     <div>
-      <Movies moviesData={moviesData} />
+      <Results results={moviesData} />
     </div>
   );
 }
