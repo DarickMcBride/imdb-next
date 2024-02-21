@@ -40,13 +40,12 @@ export default function About() {
         </li>
       </ul>
       <Image
-        className="mx-auto  rounded-lg shadow-lg"
+        className="mx-auto rounded-lg shadow-lg w-full px-4 sm:w-7/12 max-h-96"
         src={cowPic}
         alt="cow"
         width={0}
         height={0}
-        style={{ width: "90%", maxHeight: 500 }}
-      ></Image>
+      />
     </div>
   );
 }
